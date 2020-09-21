@@ -84,6 +84,100 @@
 			/* Custom CSS Styling */
 			/*customcss*/
 		</style>
+
+		<style type="text/css">
+			/*
+			* mentions
+			*
+			*/
+
+			/* links that are external to jive */
+			.jive-link-external-small {
+				color: rgb(55, 119, 199); /* JVBlue */
+			}
+
+			/* all mention links */
+			.jive-link-app-icon,
+			.jive-link-profile-small,
+			.jive-link-thread-small,
+			.jive-link-message-small,
+			.jive-link-wiki-small,
+			.jive-link-socialgroup-small,
+			.jive-link-community-small,
+			.jive-link-status-small,
+			.jive-link-blog-small,
+			.jive-link-poll-small,
+			.jive-link-task-small,
+			.jive-link-tag-small,
+			.jive-link-project-small,
+			.jive-link-image-small,
+			.jive-link-video-small,
+			a[_jive_internal='true'] {
+				color: rgb(55, 119, 199); /* JVBlue */
+			}
+
+			.jive-link-idea,
+			.jive-link-event,
+			.jive-link-poll-small,
+			.jive-link-socialgroup-small,
+			.jive-link-video-small,
+			.jive-link-tilestream-small,
+			.jive-link-status-small,
+			.jive-link-blog-small,
+			.jive-link-message-small,
+			.jive-link-community-small,
+			.jive-link-wiki-small,
+			.jive-link-project-small,
+			.jive-link-profile-small {
+				word-break: inherit;
+				background-color: transparent;
+				background-repeat: no-repeat;
+				background-position: 0 5px;
+				padding: 1px 0 1px 2px;
+				padding-left: -webkit-calc(12px + 0.35ex);
+				padding-left: calc(12px + 0.35ex);
+			}
+
+			.jive-link-idea {
+				background-image: url(./icons/j-icon-idea.png);
+			}
+			.jive-link-event {
+				background-image: url(./icons/j-icon-event.png);
+			}
+			.jive-link-poll-small {
+				background-image: url(./icons/j-icon-poll.png);
+			}
+			.jive-link-socialgroup-small {
+				background-image: url(./icons/j-icon-group.png);
+			}
+			.jive-link-video-small {
+				background-image: url(./icons/j-icon-video.png);
+			}
+			.jive-link-tilestream-small {
+				background-image: url(./icons/j-icon-external-app.png);
+			}
+			.jive-link-status-small {
+				background-image: url(./icons/j-icon-status.png);
+			}
+			.jive-link-blog-small {
+				background-image: url(./icons/j-icon-blog.png);
+			}
+			.jive-link-message-small {
+				background-image: url(./icons/j-icon-discussion.png);
+			}
+			.jive-link-community-small {
+				background-image: url(./icons/j-icon-space.png);
+			}
+			.jive-link-wiki-small {
+				background-image: url(./icons/j-icon-document.png);
+			}
+			.jive-link-profile-small {
+				background-image: url(./icons/j-icon-profile-person-card.png);
+			}
+			.jive-link-project-small {
+				background-image: url(./icons/j-icon-project.png);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -8705,7 +8799,7 @@
 				// Next line is comented to prevent deselecting selection. It looks like work but if there are any issues will appear then uconmment it as well as code above.
 				//sel.collapseToStart();
 				var range = sel.getRangeAt(0);
-				var span = document.createElement('span');// something happening here preventing selection of elements
+				var span = document.createElement('span'); // something happening here preventing selection of elements
 				if (zss_editor.isUsingiOS) {
 					range.collapse(false);
 				}
