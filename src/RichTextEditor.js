@@ -19,6 +19,41 @@ import { MessageConverter } from './WebviewMessageHandler';
 
 const PlatformIOS = Platform.OS === 'ios';
 
+/* We need to require any image assets in order for them to be bundled into an iOS release */
+const jIconAcclaim = require('./assets/icons/j-icon-acclaim.png');
+const jIconAnnouncement = require('./assets/icons/j-icon-announcement.png');
+const jIconBinaryUpload = require('./assets/icons/j-icon-binary-upload.png');
+const jIconBlog = require('./assets/icons/j-icon-blog.png');
+const jIconBookmark = require('./assets/icons/j-icon-bookmark.png');
+const jIconDirectMessage = require('./assets/icons/j-icon-direct-message.png');
+const jIconDiscussionAnswered = require('./assets/icons/j-icon-discussion-answered.png');
+const jIconDiscussionHelpfulAnswered = require('./assets/icons/j-icon-discussion-helpful-answered.png');
+const jIconDiscussionQuestion = require('./assets/icons/j-icon-discussion-question.png');
+const jIconDiscussion = require('./assets/icons/j-icon-discussion.png');
+const jIconDoc = require('./assets/icons/j-icon-doc.png');
+const jIconDocument = require('./assets/icons/j-icon-document.png');
+const jIconEvent = require('./assets/icons/j-icon-event.png');
+const jIconExternalApp = require('./assets/icons/j-icon-external-app.png');
+const jIconGenericApp = require('./assets/icons/j-icon-generic-app.png');
+const jIconGeneric = require('./assets/icons/j-icon-generic.png');
+const jIconGroup = require('./assets/icons/j-icon-group.png');
+const jIconIdea = require('./assets/icons/j-icon-idea.png');
+const jIconImg = require('./assets/icons/j-icon-img.png');
+const jIconMov = require('./assets/icons/j-icon-mov.png');
+const jIconPdf = require('./assets/icons/j-icon-pdf.png');
+const jIconPoll = require('./assets/icons/j-icon-poll.png');
+const jIconPpt = require('./assets/icons/j-icon-ppt.png');
+const jIconProfilePersonCard = require('./assets/icons/j-icon-profile-person-card.png');
+const jIconProject = require('./assets/icons/j-icon-project.png');
+const jIconSpace = require('./assets/icons/j-icon-space.png');
+const jIconStatus = require('./assets/icons/j-icon-status.png');
+const jIconTags = require('./assets/icons/j-icon-tags.png');
+const jIconTask = require('./assets/icons/j-icon-task.png');
+const jIconTxt = require('./assets/icons/j-icon-txt.png');
+const jIconVideo = require('./assets/icons/j-icon-video.png');
+const jIconXls = require('./assets/icons/j-icon-xls.png');
+const jIconZip = require('./assets/icons/j-icon-zip.png');
+
 export default class RichTextEditor extends Component {
 	static propTypes = {
 		titlePlaceholder: PropTypes.string,
